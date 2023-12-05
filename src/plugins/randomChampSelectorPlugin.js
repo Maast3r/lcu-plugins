@@ -59,7 +59,6 @@ export default class RandomChampSelectorPlugin extends LcuPlugin {
         ).id;
     }
 
-    //  todo: add check to only go if the current sumoner is the one typing
     pickRandomChamp(currentSummonerId) {
         return async (event) => {
             if (/random/i.test(event?.data?.body) && event.data.fromSummonerId === currentSummonerId) {
