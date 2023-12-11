@@ -24,7 +24,7 @@ export default class RandomChampSelectorPlugin extends LcuPlugin {
                 this.pickRandomChamp(currentSummonerId)
             );
             this.log('is ready');
-        });
+        }).catch((error) => console.error(error));
     }
 
     async getCurrentSummoner() {
