@@ -14,6 +14,10 @@ import RandomChampSelectorPlugin, {
     label as RandomChampSelectorPluginLabel,
 } from './plugins/randomChampSelectorPlugin.js';
 
+import ReadyUpPlugin, {
+    label as ReadyUpPluginLabel,
+} from './plugins/readyUpPlugin.js';
+
 export default [
     {
         label: AutoAcceptQueuePluginLabel,
@@ -30,5 +34,9 @@ export default [
     {
         label: RandomChampSelectorPluginLabel,
         plugin: RandomChampSelectorPlugin,
-    }
+    },
+    {
+        label: ReadyUpPluginLabel,
+        plugin: ReadyUpPlugin,
+    },
 ];

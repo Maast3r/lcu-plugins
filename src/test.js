@@ -5,12 +5,14 @@ import AutoAcceptQueuePlugin from './plugins/autoAcceptQueuePlugin.js';
 import ChangeLobbyPlugin from './plugins/changeLobbyPlugin.js';
 import NeverDodgePlugin from './plugins/neverDodgePlugin.js';
 import RandomChampSelectorPlugin from './plugins/randomChampSelectorPlugin.js';
+import ReadyUpPlugin from './plugins/readyUpPlugin.js';
 
 const plugins = [
     new AutoAcceptQueuePlugin(),
     new ChangeLobbyPlugin(),
     new NeverDodgePlugin(),
     new RandomChampSelectorPlugin(),
+    new ReadyUpPlugin(),
 ];
 
 const pluginManager = new LcuPluginManager(plugins);
